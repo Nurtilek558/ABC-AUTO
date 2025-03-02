@@ -1,0 +1,571 @@
+body {
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-main {
+  max-width: 100%;
+}
+
+.card-top {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+}
+
+.card-top a {
+  color: #737373;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.top-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eff0f0;
+  height: 43px;
+  max-width: 100%;
+}
+
+.icons a .icon-stat:hover{
+    color: #ca0100;
+}
+
+.header {
+  padding: 15px 50px;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.start {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+}
+
+.red {
+  background-color: #ca0100;
+  border-radius: 25%;
+  color: #fff;
+}
+
+.background p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header nav ul li {
+  margin-right: 20px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.small-phone {
+  text-align: right;
+}
+
+.first-mobile {
+  font-size: 20px;
+}
+
+.header nav ul li a:hover {
+  color: #ca0100;
+}
+
+.call {
+  width: 200px;
+  height: 50px;
+  margin-right: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #ca0100;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.call:hover {
+  background-color: #9a0a0a;
+}
+/* HERO */
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff00;
+  border: none;
+}
+.background-city {
+  position: relative;
+}
+
+.options select {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.icons a .icon-stat {
+  color: #737373;
+  text-decoration: none;
+  height: 21px;
+  width: 24px;
+  text-align: center;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
+.city {
+  position: absolute;
+  margin-top: -600px;
+  margin-left: 300px;
+}
+.swiper-pagination-bullet {
+  background: #737373;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+  border: 3.5px solid #ca0100;
+}
+
+.mashines {
+  position: absolute;
+  margin-top: -500px;
+  margin-left: 200px;
+  background-color: #ca0100;
+  width: 210px;
+  height: 30px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 33px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.texts {
+  position: absolute;
+  margin-top: -450px;
+  margin-left: 200px;
+}
+
+.texts h1 {
+  font-size: 50px;
+}
+
+.texts h2 {
+  color: #737373;
+  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.cars-models {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff0f0;
+  flex-wrap: nowrap;
+}
+
+.swiper-pagination {
+  left: 10px;
+}
+.swiper {
+  position: absolute;
+  margin-top: -400px;
+  margin-left: 300px;
+  width: 100%;
+  padding-top: 50px;
+  /* Arrows styles */
+}
+
+.swiper2 {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    gap: 30px;
+}
+
+.swiper-slide2{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide2 img {
+    display: block;
+    width: 100%;
+  }
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin: 0 20px;
+  color: #262626;
+  width: 40px;
+  height: 60px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.card {
+  width: 446px;
+  height: 500px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.car-image {
+  width: 100%;
+  border-radius: 10px;
+}
+.title {
+  font-size: 27px;
+  font-weight: bold;
+}
+.price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.money {
+  margin-top: 40px;
+  display: flex;
+  color: #262626;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.badge-vygod {
+  position: absolute;
+  margin-left: 190px;
+  margin-top: -35px;
+  color: #ca0100;
+  line-height: 15px;
+  font-weight: 500;
+}
+
+.card-icon1 {
+  font-size: 26px;
+  position: absolute;
+  margin-left: 170px;
+  margin-top: -30px;
+  cursor: pointer;
+}
+.card-icon2 {
+  font-size: 22px;
+  position: absolute;
+  margin-left: 190px;
+  margin-top: -29px;
+  cursor: pointer;
+}
+
+.card-icon2:hover {
+  color: #ca0100;
+}
+
+.card-icon1:hover {
+  color: #ca0100;
+}
+
+.credit {
+  font-weight: bold;
+}
+
+.PTS {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.PTS-text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.PTS-btn {
+  background-color: #ca0100;
+  width: 312px;
+  height: 65px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.PTS-btn:hover {
+  background-color: #9a0a0a;
+}
+
+.offers {
+  margin-top: 20px;
+}
+
+.features {
+  font-size: 16px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 180px;
+}
+.btn-red {
+  background: red;
+  color: white;
+}
+.btn-gray {
+  background: gray;
+  color: white;
+}
+
+.car {
+  width: 273;
+  height: 152;
+  position: absolute;
+  margin-left: 140px;
+  margin-top: 100px;
+}
+
+.background-car {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.kia {
+  position: absolute;
+  margin-top: -296px;
+  margin-left: -100px;
+}
+
+.badge-text {
+  position: absolute;
+  margin-top: -28px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.badge {
+  margin-top: 10px;
+}
+
+.offer-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.offer-highlight {
+  color: #ca0100;
+  font-weight: bold;
+}
+
+.gift-icon {
+  background-color: #262626;
+  border-radius: 50%;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
+}
+
+.specs {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #ffffff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid #c2c2c4;
+}
+.buttons {
+  display: flex;
+  gap: 10px; 
+  margin-top: 15px;
+  position: relative;
+  margin-top: -170px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+.btn-red {
+  background: red;
+  color: white;
+}
+
+.btn-red:hover {
+  background: darkred;
+}
+
+.btn-black {
+  background: black;
+  color: white;
+}
+
+.btn-black:hover {
+  background: #333; 
+}
+
+.btn-gray {
+  background: gray;
+  color: white;
+}
+
+.btn-gray:hover {
+  background: darkgray; 
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-icon {
+  font-size: 24px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+*{
+    box-sizing: border-box;
+}
+
+  .burger-menu {
+    display: block;
+  }
+  .links nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .links nav ul.active {
+    display: flex;
+  }
+  .links nav ul li {
+    margin: 10px 0;
+  }
+  .contacts {
+    display: none;
+  }
+}

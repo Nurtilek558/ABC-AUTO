@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Auto - Автослайдер</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="main">
+    <div class="container-main">
+      <div class="top-cards">
+        <div class="location card-top">
+          <ion-icon class="icon" name="location-outline"></ion-icon>
+          <p>Россия, Москва, 38КМ МКАД, 6Бс1</p>
+        </div>
+        <div class="time card-top">
+          <ion-icon class="icon" name="time-outline"></ion-icon>
+          <p>Время работы: c 08:00 до 21:00</p>
+        </div>
+        <div class="whatsapp card-top">
+          <ion-icon class="icon" name="logo-whatsapp"></ion-icon>
+          <p><a href="#">Whatsapp</a></p>
+        </div>
+      </div>
+      <div class="header">
+        <div class="start">
+          <img src="./img/Group 673.svg" alt="logo" />
+          <img src="./img/Line 56.svg" alt="line" />
+          <div class="background">
+            <p>
+              <span class="bold red">10 лет</span> превосходим <br />
+              ваши ожидания
+            </p>
+          </div>
+          <div class="burger-menu">
+            <ion-icon name="menu-outline" class="burger-icon"></ion-icon>
+          </div>
+          <div class="links">
+            <nav>
+              <ul>
+                <li><a href="#podbor-car">Подбор авто</a></li>
+                <li><a href="#">О комании</a></li>
+                <li><a href="#">Техцентр</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="contacts">
+            <img src="./img/Group 3324.svg" alt="phone" />
+            <div class="mobiles">
+              <h2 class="bold first-mobile">+7 (800) 551-94-31</h2>
+              <p class="small-phone">+7 (495) 292-18-67</p>
+            </div>
+            <button class="call bold">Обратный звонок</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="options">
+          <select id="carModel">
+            <option value="">
+              Каталог авто <ion-icon name="chevron-down-outline"></ion-icon>
+            </option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <select id="carModel">
+            <option value="">
+              Авто с пробегом <ion-icon name="chevron-down-outline"></ion-icon>
+            </option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <select id="carModel">
+            <option value="">
+              Кредит и рассрочка
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <select id="carModel">
+            <option value="">
+              Спецпредложения <ion-icon name="chevron-down-outline"></ion-icon>
+            </option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <select id="carModel">
+            <option value="">Такси в кредит</option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <div class="icons">
+            <a href="#"
+              ><ion-icon class="icon-stat" name="heart-outline"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon class="icon-stat" name="stats-chart-outline"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon class="icon-stat" name="search-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="images">
+          <img
+            class=".background-city"
+            src="./img/1 617.svg"
+            alt="background"
+          />
+          <img class="city" src="./img/1059 2.svg" alt="city" />
+        </div>
+        <div class="contexts">
+          <div class="mashines">
+            <p>Осталось всего 10 авто!</p>
+          </div>
+          <div class="texts">
+            <h1>
+              Грандиозная распродажа <br />
+              тестового парка!
+            </h1>
+            <h2>Узнай свою цену!</h2>
+          </div>
+        </div>
+        <div class="slider-container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/rio_new 1.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/ext-front_tcm-3020-1767644 1.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/rapid-entry-AVN 1.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/ext-front_tcm-3020-1767644 1.svg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/rapid-entry-AVN 1.svg" />
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section id="podbor-car" class="cars-models">
+        <img class="kia" src="./img/Frame 16 (1).svg" alt="" />
+        <img
+          class="first-column"
+          src="./img/Group 3790.svg"
+          alt="first-column"
+        />
+        <img
+          class="second-column"
+          src="./img/Group 3789.svg"
+          alt="second-column"
+        />
+        <img
+          class="third-column"
+          src="./img/Group 4261.svg"
+          alt="third-column"
+        />
+        <img
+          class="fourth-column"
+          src="./img/Group 3787.svg"
+          alt="fourth-column"
+        />
+        <img
+          class="fiveth-column"
+          src="./img/Group 3786.svg"
+          alt="fiveth-column"
+        />
+      </section>
+      <h1 class="PTS-text">Автомобили в наличии с ПТС</h1>
+      <section class="PTS">
+        <div class="card">
+          <h2 class="title">
+            Skoda Octavia <br />
+            1.6 MPI MT Active
+          </h2>
+          <button class="card-icon1">
+            <ion-icon class="card-icon1" name="heart-outline"></ion-icon>
+          </button>
+          <button class="card-icon2">
+            <ion-icon class="card-icon2" name="stats-chart-outline"></ion-icon>
+          </button>
+          <img
+            class="background-car"
+            src="./img/1059 8.svg"
+            alt="background-car"
+          />
+          <img
+            class="car"
+            src="./img/a32e3b81-2aeb-426a-bdf5-a5db7fcd18c1 8 (1).svg"
+            alt="Skoda Octavia"
+            class="car-image"
+          />
+          <div class="badge">
+            <img src="./img/Rectangle 202.svg" alt="badge" />
+          </div>
+          <p class="badge-text">Предложение дня</p>
+          <p class="badge-vygod">
+            Выгода <br />
+            до 300 000 ₽
+          </p>
+          <div class="offers">
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Оборудование <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                КАСКО <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Комплект <br />
+                резины <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+          </div>
+          <div class="money">
+            <p class="price">от 1 615 000 ₽</p>
+            <p class="features">
+              Кредит <span class="credit">от 115 000 ₽/мес.</span>
+            </p>
+          </div>
+          <div class="specs">
+            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⛽ 5.3 л/км</div>
+            <div class="spec-item">
+              <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
+            </div>
+            <div class="spec-item">
+              <ion-icon name="stopwatch-outline"></ion-icon> 10,3 с.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-red">Резерв онлайн</button>
+            <button class="btn btn-black">Купить</button>
+            <button class="btn btn-gray">Подробнее</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="title">
+            Skoda Octavia <br />
+            1.6 MPI MT Active
+          </h2>
+          <button class="card-icon1">
+            <ion-icon class="card-icon1" name="heart-outline"></ion-icon>
+          </button>
+          <button class="card-icon2">
+            <ion-icon class="card-icon2" name="stats-chart-outline"></ion-icon>
+          </button>
+          <img
+            class="background-car"
+            src="./img/1059 8.svg"
+            alt="background-car"
+          />
+          <img
+            class="car"
+            src="./img/a32e3b81-2aeb-426a-bdf5-a5db7fcd18c1 8 (1).svg"
+            alt="Skoda Octavia"
+            class="car-image"
+          />
+          <div class="badge">
+            <img src="./img/Rectangle 202.svg" alt="badge" />
+          </div>
+          <p class="badge-text">Предложение дня</p>
+          <p class="badge-vygod">
+            Выгода <br />
+            до 300 000 ₽
+          </p>
+          <div class="offers">
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Оборудование <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                КАСКО <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Комплект <br />
+                резины <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+          </div>
+          <div class="money">
+            <p class="price">от 1 615 000 ₽</p>
+            <p class="features">
+              Кредит <span class="credit">от 115 000 ₽/мес.</span>
+            </p>
+          </div>
+          <div class="specs">
+            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⛽ 5.3 л/км</div>
+            <div class="spec-item">
+              <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
+            </div>
+            <div class="spec-item">
+              <ion-icon name="stopwatch-outline"></ion-icon> 10,3 с.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-red">Резерв онлайн</button>
+            <button class="btn btn-black">Купить</button>
+            <button class="btn btn-gray">Подробнее</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="title">
+            Skoda Octavia <br />
+            1.6 MPI MT Active
+          </h2>
+          <button class="card-icon1">
+            <ion-icon class="card-icon1" name="heart-outline"></ion-icon>
+          </button>
+          <button class="card-icon2">
+            <ion-icon class="card-icon2" name="stats-chart-outline"></ion-icon>
+          </button>
+          <img
+            class="background-car"
+            src="./img/1059 8.svg"
+            alt="background-car"
+          />
+          <img
+            class="car"
+            src="./img/a32e3b81-2aeb-426a-bdf5-a5db7fcd18c1 8 (1).svg"
+            alt="Skoda Octavia"
+            class="car-image"
+          />
+          <div class="badge">
+            <img src="./img/Rectangle 202.svg" alt="badge" />
+          </div>
+          <p class="badge-text">Предложение дня</p>
+          <p class="badge-vygod">
+            Выгода <br />
+            до 300 000 ₽
+          </p>
+          <div class="offers">
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Оборудование <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                КАСКО <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Комплект <br />
+                резины <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+          </div>
+          <div class="money">
+            <p class="price">от 1 615 000 ₽</p>
+            <p class="features">
+              Кредит <span class="credit">от 115 000 ₽/мес.</span>
+            </p>
+          </div>
+          <div class="specs">
+            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⛽ 5.3 л/км</div>
+            <div class="spec-item">
+              <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
+            </div>
+            <div class="spec-item">
+              <ion-icon name="stopwatch-outline"></ion-icon> 10,3 с.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-red">Резерв онлайн</button>
+            <button class="btn btn-black">Купить</button>
+            <button class="btn btn-gray">Подробнее</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="title">
+            Skoda Octavia <br />
+            1.6 MPI MT Active
+          </h2>
+          <button class="card-icon1">
+            <ion-icon class="card-icon1" name="heart-outline"></ion-icon>
+          </button>
+          <button class="card-icon2">
+            <ion-icon class="card-icon2" name="stats-chart-outline"></ion-icon>
+          </button>
+          <img
+            class="background-car"
+            src="./img/1059 8.svg"
+            alt="background-car"
+          />
+          <img
+            class="car"
+            src="./img/a32e3b81-2aeb-426a-bdf5-a5db7fcd18c1 8 (1).svg"
+            alt="Skoda Octavia"
+            class="car-image"
+          />
+          <div class="badge">
+            <img src="./img/Rectangle 202.svg" alt="badge" />
+          </div>
+          <p class="badge-text">Предложение дня</p>
+          <p class="badge-vygod">
+            Выгода <br />
+            до 300 000 ₽
+          </p>
+          <div class="offers">
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Оборудование <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                КАСКО <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Комплект <br />
+                резины <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+          </div>
+          <div class="money">
+            <p class="price">от 1 615 000 ₽</p>
+            <p class="features">
+              Кредит <span class="credit">от 115 000 ₽/мес.</span>
+            </p>
+          </div>
+          <div class="specs">
+            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⛽ 5.3 л/км</div>
+            <div class="spec-item">
+              <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
+            </div>
+            <div class="spec-item">
+              <ion-icon name="stopwatch-outline"></ion-icon> 10,3 с.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-red">Резерв онлайн</button>
+            <button class="btn btn-black">Купить</button>
+            <button class="btn btn-gray">Подробнее</button>
+          </div>
+        </div>
+<div class="card">
+          <h2 class="title">
+            Skoda Octavia <br />
+            1.6 MPI MT Active
+          </h2>
+          <button class="card-icon1">
+            <ion-icon class="card-icon1" name="heart-outline"></ion-icon>
+          </button>
+          <button class="card-icon2">
+            <ion-icon class="card-icon2" name="stats-chart-outline"></ion-icon>
+          </button>
+          <img
+            class="background-car"
+            src="./img/1059 8.svg"
+            alt="background-car"
+          />
+          <img
+            class="car"
+            src="./img/a32e3b81-2aeb-426a-bdf5-a5db7fcd18c1 8 (1).svg"
+            alt="Skoda Octavia"
+            class="car-image"
+          />
+          <div class="badge">
+            <img src="./img/Rectangle 202.svg" alt="badge" />
+          </div>
+          <p class="badge-text">Предложение дня</p>
+          <p class="badge-vygod">
+            Выгода <br />
+            до 300 000 ₽
+          </p>
+          <div class="offers">
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Оборудование <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                КАСКО <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Комплект <br />
+                резины <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+          </div>
+          <div class="money">
+            <p class="price">от 1 615 000 ₽</p>
+            <p class="features">
+              Кредит <span class="credit">от 115 000 ₽/мес.</span>
+            </p>
+          </div>
+          <div class="specs">
+            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⛽ 5.3 л/км</div>
+            <div class="spec-item">
+              <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
+            </div>
+            <div class="spec-item">
+              <ion-icon name="stopwatch-outline"></ion-icon> 10,3 с.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-red">Резерв онлайн</button>
+            <button class="btn btn-black">Купить</button>
+            <button class="btn btn-gray">Подробнее</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="title">
+            Skoda Octavia <br />
+            1.6 MPI MT Active
+          </h2>
+          <button class="card-icon1">
+            <ion-icon class="card-icon1" name="heart-outline"></ion-icon>
+          </button>
+          <button class="card-icon2">
+            <ion-icon class="card-icon2" name="stats-chart-outline"></ion-icon>
+          </button>
+          <img
+            class="background-car"
+            src="./img/1059 8.svg"
+            alt="background-car"
+          />
+          <img
+            class="car"
+            src="./img/a32e3b81-2aeb-426a-bdf5-a5db7fcd18c1 8 (1).svg"
+            alt="Skoda Octavia"
+            class="car-image"
+          />
+          <div class="badge">
+            <img src="./img/Rectangle 202.svg" alt="badge" />
+          </div>
+          <p class="badge-text">Предложение дня</p>
+          <p class="badge-vygod">
+            Выгода <br />
+            до 300 000 ₽
+          </p>
+          <div class="offers">
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Оборудование <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                КАСКО <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Комплект <br />
+                резины <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+          </div>
+          <div class="money">
+            <p class="price">от 1 615 000 ₽</p>
+            <p class="features">
+              Кредит <span class="credit">от 115 000 ₽/мес.</span>
+            </p>
+          </div>
+          <div class="specs">
+            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⛽ 5.3 л/км</div>
+            <div class="spec-item">
+              <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
+            </div>
+            <div class="spec-item">
+              <ion-icon name="stopwatch-outline"></ion-icon> 10,3 с.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-red">Резерв онлайн</button>
+            <button class="btn btn-black">Купить</button>
+            <button class="btn btn-gray">Подробнее</button>
+          </div>
+        </div>
+        <button class="PTS-btn">ПОКАЗАТЬ ЕЩЕ</button>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+м    <script src="./js/slider.js"></script>
+      <script src="./js/switcher-theme.js"></script>
+      <script src="./js/burger-menu.js"></script>
+    </div>
+  </body>
+</html>
