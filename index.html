@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
@@ -15,6 +21,7 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/photo_2025-03-05_07-43-57 (1).jpg" />
   </head>
   <body class="main">
     <div class="container-main">
@@ -34,7 +41,28 @@
       </div>
       <div class="header">
         <div class="start">
-          <img src="./img/Group 673.svg" alt="logo" />
+          <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+          <div class="menu" id="menu">
+            <a href="#" onclick="toggleMenu()">Главная</a>
+            <a href="#" onclick="toggleMenu()">О нас</a>
+            <a href="#" onclick="toggleMenu()">Услуги</a>
+            <a href="#" onclick="toggleMenu()">Контакты</a>
+          </div>
+          <img
+            src="./img/photo_2025-03-05_07-43-57 (1).jpg"
+            alt="logo"
+            width="80px"
+            height="95px"
+          />
+          <div class="header-logo-text">
+            <h3 class="logo-name">ABC AUTO</h3>
+            <p class="logo-description">Официальный диллер</p>
+          </div>
           <img src="./img/Line 56.svg" alt="line" />
           <div class="background">
             <p>
@@ -52,7 +80,7 @@
                 <li><a href="#">О комании</a></li>
                 <li><a href="#">Техцентр</a></li>
                 <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="./error.html">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -257,7 +285,7 @@
             </p>
           </div>
           <div class="specs">
-            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⚙ 115 л.с.</div>
             <div class="spec-item">⛽ 5.3 л/км</div>
             <div class="spec-item">
               <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
@@ -333,7 +361,7 @@
             </p>
           </div>
           <div class="specs">
-            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⚙ 115 л.с.</div>
             <div class="spec-item">⛽ 5.3 л/км</div>
             <div class="spec-item">
               <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
@@ -409,7 +437,7 @@
             </p>
           </div>
           <div class="specs">
-            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⚙ 115 л.с.</div>
             <div class="spec-item">⛽ 5.3 л/км</div>
             <div class="spec-item">
               <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
@@ -485,83 +513,7 @@
             </p>
           </div>
           <div class="specs">
-            <div class="spec-item">⚙️ 115 л.с.</div>
-            <div class="spec-item">⛽ 5.3 л/км</div>
-            <div class="spec-item">
-              <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
-            </div>
-            <div class="spec-item">
-              <ion-icon name="stopwatch-outline"></ion-icon> 10,3 с.
-            </div>
-          </div>
-          <div class="buttons">
-            <button class="btn btn-red">Резерв онлайн</button>
-            <button class="btn btn-black">Купить</button>
-            <button class="btn btn-gray">Подробнее</button>
-          </div>
-        </div>
-<div class="card">
-          <h2 class="title">
-            Skoda Octavia <br />
-            1.6 MPI MT Active
-          </h2>
-          <button class="card-icon1">
-            <ion-icon class="card-icon1" name="heart-outline"></ion-icon>
-          </button>
-          <button class="card-icon2">
-            <ion-icon class="card-icon2" name="stats-chart-outline"></ion-icon>
-          </button>
-          <img
-            class="background-car"
-            src="./img/1059 8.svg"
-            alt="background-car"
-          />
-          <img
-            class="car"
-            src="./img/a32e3b81-2aeb-426a-bdf5-a5db7fcd18c1 8 (1).svg"
-            alt="Skoda Octavia"
-            class="car-image"
-          />
-          <div class="badge">
-            <img src="./img/Rectangle 202.svg" alt="badge" />
-          </div>
-          <p class="badge-text">Предложение дня</p>
-          <p class="badge-vygod">
-            Выгода <br />
-            до 300 000 ₽
-          </p>
-          <div class="offers">
-            <div class="offer-item">
-              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
-              <div class="offer-text">
-                Оборудование <br />
-                <span class="offer-highlight">в подарок</span>
-              </div>
-            </div>
-            <div class="offer-item">
-              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
-              <div class="offer-text">
-                КАСКО <br />
-                <span class="offer-highlight">в подарок</span>
-              </div>
-            </div>
-            <div class="offer-item">
-              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
-              <div class="offer-text">
-                Комплект <br />
-                резины <br />
-                <span class="offer-highlight">в подарок</span>
-              </div>
-            </div>
-          </div>
-          <div class="money">
-            <p class="price">от 1 615 000 ₽</p>
-            <p class="features">
-              Кредит <span class="credit">от 115 000 ₽/мес.</span>
-            </p>
-          </div>
-          <div class="specs">
-            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⚙ 115 л.с.</div>
             <div class="spec-item">⛽ 5.3 л/км</div>
             <div class="spec-item">
               <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
@@ -637,7 +589,83 @@
             </p>
           </div>
           <div class="specs">
-            <div class="spec-item">⚙️ 115 л.с.</div>
+            <div class="spec-item">⚙ 115 л.с.</div>
+            <div class="spec-item">⛽ 5.3 л/км</div>
+            <div class="spec-item">
+              <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
+            </div>
+            <div class="spec-item">
+              <ion-icon name="stopwatch-outline"></ion-icon> 10,3 с.
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-red">Резерв онлайн</button>
+            <button class="btn btn-black">Купить</button>
+            <button class="btn btn-gray">Подробнее</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="title">
+            Skoda Octavia <br />
+            1.6 MPI MT Active
+          </h2>
+          <button class="card-icon1">
+            <ion-icon class="card-icon1" name="heart-outline"></ion-icon>
+          </button>
+          <button class="card-icon2">
+            <ion-icon class="card-icon2" name="stats-chart-outline"></ion-icon>
+          </button>
+          <img
+            class="background-car"
+            src="./img/1059 8.svg"
+            alt="background-car"
+          />
+          <img
+            class="car"
+            src="./img/a32e3b81-2aeb-426a-bdf5-a5db7fcd18c1 8 (1).svg"
+            alt="Skoda Octavia"
+            class="car-image"
+          />
+          <div class="badge">
+            <img src="./img/Rectangle 202.svg" alt="badge" />
+          </div>
+          <p class="badge-text">Предложение дня</p>
+          <p class="badge-vygod">
+            Выгода <br />
+            до 300 000 ₽
+          </p>
+          <div class="offers">
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Оборудование <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                КАСКО <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+            <div class="offer-item">
+              <ion-icon class="gift-icon" name="gift-outline"></ion-icon>
+              <div class="offer-text">
+                Комплект <br />
+                резины <br />
+                <span class="offer-highlight">в подарок</span>
+              </div>
+            </div>
+          </div>
+          <div class="money">
+            <p class="price">от 1 615 000 ₽</p>
+            <p class="features">
+              Кредит <span class="credit">от 115 000 ₽/мес.</span>
+            </p>
+          </div>
+          <div class="specs">
+            <div class="spec-item">⚙ 115 л.с.</div>
             <div class="spec-item">⛽ 5.3 л/км</div>
             <div class="spec-item">
               <ion-icon name="speedometer-outline"></ion-icon> 189 км/ч
@@ -655,14 +683,157 @@
         <button class="PTS-btn">ПОКАЗАТЬ ЕЩЕ</button>
       </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-м    <script src="./js/slider.js"></script>
-      <script src="./js/switcher-theme.js"></script>
-      <script src="./js/burger-menu.js"></script>
+      <section>
+        <div class="box-offer">
+          <img class="box" src="./img/pngwing 3.svg" alt="box" />
+          <div class="text">
+            <h1>
+              <span class="big">Перебьем предложения от конкурентов!</span>
+              <br />
+              <span class="low"
+                >Скидки <span class="offer-highlight">от 10 до 25%</span> на
+                стоимость автомобиля
+              </span>
+            </h1>
+            <div class="inputs">
+              <input
+                class="phone-input"
+                type="phone"
+                placeholder="Ваш телефон"
+              />
+              <button class="get-offer">Получить предложение</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="form-container">
+        <h2 class="credit-name">Заявка на автокредит</h2>
+
+        <form id="loanForm">
+          <div class="car-model">
+            <div class="label">
+              <select id="model">
+                <option value="">Марка</option>
+              </select>
+            </div>
+            <div class="label">
+              <select id="model">
+                <option value="">Модель</option>
+              </select>
+            </div>
+            <div class="label">
+              <select id="model">
+                <option value="">Комплектация</option>
+              </select>
+            </div>
+          </div>
+          <div class="credit">
+            <img class="car-credit" src="./img/car-credit.svg" alt="" />
+            <div class="credit-slider">
+              <div class="slider-container1">
+                <div class="credit-text">
+                  <label for="amount">Сумма кредита, руб:</label>
+                  <span id="amountValue">500,000</span>
+                </div>
+                <input
+                  type="range"
+                  id="amount"
+                  min="500000"
+                  max="3000000"
+                  step="100000"
+                  value="500000"
+                />
+              </div>
+
+              <div class="slider-container1">
+                <div class="credit-text">
+                  <label for="term">Срок кредита, мес:</label>
+                  <span id="termValue">6</span>
+                </div>
+                <input
+                  type="range"
+                  id="term"
+                  min="6"
+                  max="84"
+                  step="6"
+                  value="6"
+                />
+              </div>
+
+              <div class="slider-container1">
+                <div class="credit-text">
+                  <label for="initialPayment">Первоначальный взнос, руб:</label>
+                  <span id="initialPaymentValue">0</span>
+                </div>
+                <input
+                  type="range"
+                  id="initialPayment"
+                  min="0"
+                  max="1000000"
+                  step="10000"
+                  value="0"
+                />
+              </div>
+              <div class="result-container">
+                <div class="result-box">
+                  <div class="result-label">Первоначальный взнос</div>
+                  <div class="result-value" id="calculatedInitialPayment">
+                    0 руб
+                  </div>
+                </div>
+                <div class="result-box">
+                  <div class="result-label">Остаток по кредиту</div>
+                  <div class="result-value" id="calculatedRemainingAmount">
+                    500,000 руб
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-container">
+              <div class="offer-header">
+                <h1 class="offer-title">Получить выгоду</h1>
+                <div class="offer-discount">300 000 ₽</div>
+              </div>
+              <form class="offer-form">
+                <input
+                  type="text"
+                  class="offer-input"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  type="tel"
+                  class="offer-input"
+                  placeholder="Ваш телефон"
+                  required
+                />
+                <button type="submit" class="offer-button">
+                  ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ
+                </button>
+              </form>
+              <div class="offer-footer">
+                Нажимая кнопку "Получить скидку", Вы даете согласие на <br />
+                обработку своих <a href="#">персональных данных</a>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script
+              type="module"
+              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+            ></script>
+            <script src="./js/slider.js"></script>
+            <script src="./js/switcher-theme.js"></script>
+            <script src="./js/burger.js"></script>
+            <script src="./js/car-credit.js"></script>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
+</html>
+</body>
 </html>
