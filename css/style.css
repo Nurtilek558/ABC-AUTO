@@ -830,6 +830,7 @@ body.dark-theme .btn:hover {
 
 .special-offers {
   padding: 40px;
+  margin-top: 200px;
 }
 
 .special-offers__title {
@@ -1813,5 +1814,263 @@ label {
 
   .contacts {
     display: none;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations */
+.header,
+.hero,
+.PTS,
+.box-offer,
+.form-container,
+.special-offers,
+.review-main-container,
+.feedback-cards,
+.about-section,
+.company-map,
+.footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card,
+.swiper-slide,
+.feedback-card,
+.contact-card {
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container-main {
+    padding: 10px;
+  }
+
+  .header,
+  .hero,
+  .PTS,
+  .box-offer,
+  .form-container,
+  .special-offers,
+  .review-main-container,
+  .feedback-cards,
+  .about-section,
+  .company-map,
+  .footer {
+    padding: 10px;
+  }
+
+  .card,
+  .swiper-slide,
+  .feedback-card,
+  .contact-card {
+    margin: 10px 0;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header nav ul li {
+    margin: 10px 0;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts .mobiles {
+    margin-bottom: 10px;
+  }
+
+  .slider-container,
+  .swiper {
+    max-width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-model,
+  .credit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .car-model .label,
+  .credit .slider-container1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .result-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .offer-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column,
+  .footer-column1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom .left-link-footer,
+  .footer-bottom .ser-link-foot {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom .footer-rating {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header,
+  .hero,
+  .PTS,
+  .box-offer,
+  .form-container,
+  .special-offers,
+  .review-main-container,
+  .feedback-cards,
+  .about-section,
+  .company-map,
+  .footer {
+    padding: 5px;
+  }
+
+  .card,
+  .swiper-slide,
+  .feedback-card,
+  .contact-card {
+    margin: 5px 0;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header nav ul li {
+    margin: 5px 0;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contacts .mobiles {
+    margin-bottom: 5px;
+  }
+
+  .slider-container,
+  .swiper {
+    max-width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: auto;
+  }
+
+  .car-model,
+  .credit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .car-model .label,
+  .credit .slider-container1 {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .result-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-box {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .offer-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column,
+  .footer-column1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom .left-link-footer,
+  .footer-bottom .ser-link-foot {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .footer-bottom .footer-rating {
+    width: 100%;
+    justify-content: center;
   }
 }

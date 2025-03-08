@@ -1,257 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./abc.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-</head>
-<body>
+    <link rel="stylesheet" href="./ABC.css" />
+  </head>
+  <body>
+    <div class="top-cards">
+      <div class="location card-top">
+        <ion-icon class="icon" name="location-outline"></ion-icon>
+        <p>Россия, Москва, 38КМ МКАД, 6Бс1</p>
+      </div>
+      <div class="time card-top">
+        <ion-icon class="icon" name="time-outline"></ion-icon>
+        <p>Время работы: c 08:00 до 21:00</p>
+      </div>
+      <div class="whatsapp card-top">
+        <ion-icon class="icon" name="logo-whatsapp"></ion-icon>
+        <p><a href="#">Whatsapp</a></p>
+      </div>
+    </div>
     <div class="header">
-        <div class="start">
-          <div class="theme-switcher">
-            <button id="theme-toggle">
-              <ion-icon name="moon-outline"></ion-icon>
-              <!-- Иконка для темной темы -->
-            </button>
+      <div class="start">
+        <img src="./img/Group 673.svg" alt="logo" />
+
+        <div class="background">
+          <p>
+            <span class="bold red">10 лет</span> превосходим <br />
+            ваши ожидания
+          </p>
+        </div>
+        <div class="burger-menu">
+          <ion-icon name="menu-outline" class="burger-icon"></ion-icon>
+        </div>
+        <div class="links">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Подбор авто</a></li>
+              <li><a href="./company.html">О комании</a></li>
+              <li><a href="./about.html">Техцентр</a></li>
+              <li><a href="./abc.html">Отзывы</a></li>
+              <li><a href="./error.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contacts">
+          <img class="phone" src="./img/Group (12).svg" alt="phone" />
+          <div class="mobiles">
+            <h2 class="bold first-mobile">+7 (800) 551-94-31</h2>
+            <p class="small-phone">+7 (495) 292-18-67</p>
           </div>
-          <div class="burger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-          <div class="menu" id="menu">
-            <a href="#" onclick="toggleMenu()">Главная</a>
-            <a href="#" onclick="toggleMenu()">О нас</a>
-            <a href="#" onclick="toggleMenu()">Услуги</a>
-            <a href="#" onclick="toggleMenu()">Контакты</a>
-          </div>
-          <img
-            src="./img/photo_2025-03-05_07-43-57 (1).jpg"
-            alt="logo"
-            width="80px"
-            height="95px"
-          />
-          <div class="header-logo-text">
-            <h3 class="logo-name">ABC AUTO</h3>
-            <p class="logo-description">Официальный диллер</p>
-          </div>
-          <img src="./img/Line 56.svg" alt="line" />
-          <div class="background">
-            <p>
-              <span class="bold red">10 лет</span> превосходим <br />
-              ваши ожидания
-            </p>
-          </div>
-          <div class="burger-menu">
-            <ion-icon name="menu-outline" class="burger-icon"></ion-icon>
-          </div>
-          <div class="links">
-            <nav>
-              <ul>
-                <li><a href="#podbor-car">Подбор авто</a></li>
-                <li><a href="#">О комании</a></li>
-                <li><a href="#">Техцентр</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="./error.html">Контакты</a></li>
+          <button class="call bold">Обратный звонок</button>
+        </div>
+      </div>
+    </div>
+
+    <h1>Блог</h1>
+    <div class="container">
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/Rectangle 575.svg" alt="Skoda Karoq Scout" />
+        <div class="date">25 октября</div>
+        <div class="title">
+          Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+        </div>
+        <div class="description">
+          Уже в сентябре прошлого года было продано более 250 000 экземпляров
+          этой модели. Поэтому, чтобы удовлетворить спрос, Skoda решила
+          запустить производство на другом заводе.
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn btn-red">ПОКАЗАТЬ ЕЩЁ</button>
+      <button class="btn btn-gray">ПОКАЗАТЬ ВСЕ</button>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-columns">
+          <!-- Каталог авто -->
+          <div class="footer-column1">
+            <h3 class="footer-title active">КАТАЛОГ АВТО</h3>
+            <div class="footer-list-all">
+              <ul class="footer-list">
+                <li><a href="https://www.kia-bishkek.kg/">Kia</a></li>
+                <li><a href="https://hyundai.kg/">Hyundai</a></li>
+                <li><a href="https://m.mashina.kg/search/skoda/">Skoda</a></li>
+                <li><a href="https://www.vw.com/en.html">Volkswagen</a></li>
+                <li><a href="https://www.toyota-bishkek.kg/">Toyota</a></li>
+                <li>
+                  <a
+                    href="https://m.mashina.kg/search/brilliance/m3-bc3/?page=5&timestamp=1722481841"
+                    >Brilliance</a
+                  >
+                </li>
               </ul>
-            </nav>
-          </div>
-          <div class="contacts">
-            <img src="./img/Group 3324.svg" alt="phone" />
-            <div class="mobiles">
-              <h2 class="bold first-mobile">+7 (800) 551-94-31</h2>
-              <p class="small-phone">+7 (495) 292-18-67</p>
+              <ul class="footer-list">
+                <li><a href="https://changanauto.ru/">Changan</a></li>
+                <li><a href="https://cheryauto.kg/">Chery</a></li>
+                <li><a href="https://cheryauto.kg/">CheryExeed</a></li>
+                <li><a href="https://chevrolet-auto.kg/">Chevrolet</a></li>
+                <li>
+                  <a href="https://m.mashina.kg/search/citroen/">Citroen</a>
+                </li>
+                <li>
+                  <a href="https://www.drom.ru/catalog/nissan/datsun/"
+                    >Datsun</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Dongfeng</a></li>
+                <li><a href="#">DW Hower</a></li>
+                <li><a href="#">FAW </a></li>
+                <li><a href="#">Ford </a></li>
+                <li><a href="#">Foton</a></li>
+                <li><a href="#">Geely</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Great Wall</a></li>
+                <li><a href="#">Haima</a></li>
+                <li><a href="#">Haval</a></li>
+                <li><a href="#">Honda</a></li>
+                <li><a href="#">JAC</a></li>
+                <li><a href="#">Lada</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Lifan</a></li>
+                <li><a href="#">Mazda</a></li>
+                <li><a href="#">Mitsubishi</a></li>
+                <li><a href="#">Nissan</a></li>
+                <li><a href="#">Opel</a></li>
+                <li><a href="#">Peugeot </a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Ravon</a></li>
+                <li><a href="#">Renault</a></li>
+                <li><a href="#">SsangYong</a></li>
+                <li><a href="#">Suzuki</a></li>
+                <li><a href="#">UAZ </a></li>
+                <li><a href="#">Zotye</a></li>
+              </ul>
             </div>
-            <button class="call bold">Обратный звонок</button>
+          </div>
+
+          <!-- Кредит и рассрочка -->
+          <div class="footer-column">
+            <h3 class="footer-title active">КРЕДИТ И РАССРОЧКА</h3>
+            <ul class="footer-list">
+              <li><a href="https://alma.kg/">Экспресс-кредит</a></li>
+              <li>
+                <a
+                  href="https://chery-planeta-avto.ru/customers/buy/offers/family-car-program/"
+                  >Семейный автомобиль</a
+                >
+              </li>
+              <li>
+                <a href="https://www.autonews.ru/news/65a1615a9a794770b4224456"
+                  >Первый автомобиль</a
+                >
+              </li>
+              <li>
+                <a href="https://adom.ru/credit/gos-medic"
+                  >Работникам медицины</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://kaktus.media/doc/513761_gde_kypit_avto_v_rassrochky_3_avtosalona_bishkeka_adresa_i_telefony.html"
+                  >Рассрочка</a
+                >
+              </li>
+              <li>
+                <a href="https://www.toyota-bishkek.kg/buy-and-offers/trade-in"
+                  >Trade-in</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Контакты -->
+          <div class="footer-column">
+            <h3 class="footer-title1">КОНТАКТЫ</h3>
+            <div class="icon-content1">
+              <ion-icon class="call-icon1" name="call-outline"></ion-icon>
+              <p class="gray">
+                +7 (800) 551-94-31 <br />
+                +7 (495) 292-18-67
+              </p>
+              <p></p>
+            </div>
+            <div class="icon-content1">
+              <ion-icon class="time-icon1" name="time-outline"></ion-icon>
+              <p class="gray">Ежедневно с 08:00 до 21:00</p>
+            </div>
+            <div class="icon-content1">
+              <ion-icon
+                class="location-icon1"
+                name="location-outline"
+              ></ion-icon>
+              <p class="gray">Россия, Москва, 38KM MKAД, 65c1</p>
+            </div>
+            <a class="chme" href="#">Схема проезда</a>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="options1">
-            <select id="carModel">
-              <option value="">
-                Каталог авто <ion-icon name="chevron-down-outline"></ion-icon>
-              </option>
-              <option value="kia">Kia</option>
-              <option value="hyundai">Hyundai</option>
-              <option value="skoda">Skoda</option>
-            </select>
-            <select id="carModel">
-              <option value="">
-                Авто с пробегом
-                <ion-icon name="chevron-down-outline"></ion-icon>
-              </option>
-              <option value="kia">Kia</option>
-              <option value="hyundai">Hyundai</option>
-              <option value="skoda">Skoda</option>
-            </select>
-            <select id="carModel">
-              <option value="">
-                Кредит и рассрочка
-                <ion-icon name="chevron-down-outline"></ion-icon>
-              </option>
-              <option value="kia">Kia</option>
-              <option value="hyundai">Hyundai</option>
-              <option value="skoda">Skoda</option>
-            </select>
-            <select id="carModel">
-              <option value="">
-                Спецпредложения
-                <ion-icon name="chevron-down-outline"></ion-icon>
-              </option>
-              <option value="kia">Kia</option>
-              <option value="hyundai">Hyundai</option>
-              <option value="skoda">Skoda</option>
-            </select>
-            <select id="carModel">
-              <option value="">Такси в кредит</option>
-              <option value="kia">Kia</option>
-              <option value="hyundai">Hyundai</option>
-              <option value="skoda">Skoda</option>
-            </select>
-          </div>
-          <div class="footer-columns">
-            <!-- Каталог авто -->
-            <div class="footer-column1">
-              <h3 class="footer-title active">КАТАЛОГ АВТО</h3>
-              <div class="footer-list-all">
-                <ul class="footer-list">
-                  <li><a href="#">Kia</a></li>
-                  <li><a href="#">Hyundai</a></li>
-                  <li><a href="#">Skoda</a></li>
-                  <li><a href="#">Volkswagen</a></li>
-                  <li><a href="#">Toyota</a></li>
-                  <li><a href="#">Brilliance</a></li>
-                </ul>
-                <ul class="footer-list">
-                  <li><a href="#">Changan</a></li>
-                  <li><a href="#">Chery</a></li>
-                  <li><a href="#">CheryExeed</a></li>
-                  <li><a href="#">Chevrolet</a></li>
-                  <li><a href="#">Citroen</a></li>
-                  <li><a href="#">Datsun</a></li>
-                </ul>
-                <ul class="footer-list">
-                  <li><a href="#">Dongfeng</a></li>
-                  <li><a href="#">DW Hower</a></li>
-                  <li><a href="#">FAW </a></li>
-                  <li><a href="#">Ford </a></li>
-                  <li><a href="#">Foton</a></li>
-                  <li><a href="#">Geely</a></li>
-                </ul>
-                <ul class="footer-list">
-                  <li><a href="#">Great Wall</a></li>
-                  <li><a href="#">Haima</a></li>
-                  <li><a href="#">Haval</a></li>
-                  <li><a href="#">Honda</a></li>
-                  <li><a href="#">JAC</a></li>
-                  <li><a href="#">Lada</a></li>
-                </ul>
-                <ul class="footer-list">
-                  <li><a href="#">Lifan</a></li>
-                  <li><a href="#">Mazda</a></li>
-                  <li><a href="#">Mitsubishi</a></li>
-                  <li><a href="#">Nissan</a></li>
-                  <li><a href="#">Opel</a></li>
-                  <li><a href="#">Peugeot </a></li>
-                </ul>
-                <ul class="footer-list">
-                  <li><a href="#">Ravon</a></li>
-                  <li><a href="#">Renault</a></li>
-                  <li><a href="#">SsangYong</a></li>
-                  <li><a href="#">Suzuki</a></li>
-                  <li><a href="#">UAZ </a></li>
-                  <li><a href="#">Zotye</a></li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- Кредит и рассрочка -->
-            <div class="footer-column">
-              <h3 class="footer-title active">КРЕДИТ И РАССРОЧКА</h3>
-              <ul class="footer-list">
-                <li><a href="#">Экспресс-кредит</a></li>
-                <li><a href="#">Семейный автомобиль</a></li>
-                <li><a href="#">Первый автомобиль</a></li>
-                <li><a href="#">Работникам медицины</a></li>
-                <li><a href="#">Рассрочка</a></li>
-                <li><a href="#">Trade-in</a></li>
-              </ul>
-            </div>
-
-            <!-- Контакты -->
-            <div class="footer-column">
-              <h3 class="footer-title1">КОНТАКТЫ</h3>
-              <div class="icon-content1">
-                <ion-icon class="call-icon1" name="call-outline"></ion-icon>
-                <p class="gray">
-                  +7 (800) 551-94-31 <br />
-                  +7 (495) 292-18-67
-                </p>
-                <p></p>
-              </div>
-              <div class="icon-content1">
-                <ion-icon class="time-icon1" name="time-outline"></ion-icon>
-                <p class="gray">Ежедневно с 08:00 до 21:00</p>
-              </div>
-              <div class="icon-content1">
-                <ion-icon
-                  class="location-icon1"
-                  name="location-outline"
-                ></ion-icon>
-                <p class="gray">Россия, Москва, 38KM MKAД, 65c1</p>
-              </div>
-              <a class="chme" href="#">Схема проезда</a>
-            </div>
+      <div class="footer-bottom">
+        <div class="left-link-footer">
+          <h1>© 2021 Автосалон "ABC AUTO". Официальный дилер</h1>
+          <div class="link-footer">
+            <p><a href="#">Политика конфиденциальности</a></p>
+            <p><a href="#">Пользовательское соглашение</a></p>
           </div>
         </div>
-
-        <div class="footer-bottom">
-          <div class="left-link-footer">
-            <h1>© 2021 Автосалон "ABC AUTO". Официальный дилер</h1>
-            <div class="link-footer">
-              <p><a href="#">Политика конфиденциальности</a></p>
-              <p><a href="#">Пользовательское соглашение</a></p>
-            </div>
-          </div>
-          <div class="ser-link-foot">
-            <p>
-              Обращаем Ваше внимание на то, что данный интернет-сайт носит
-              исключительно информационный характер и ни при каких условиях не
-              является публичной офертой, определяемой положениями Статьи 437
-              Гражданского кодекса Российской Федерации.
-            </p>
-          </div>
-          <div class="footer-rating">
-            <img
-              class="yandex-rating"
-              src="./img/45588c5ae1444dc11fd0cd39704f66dd 1.svg"
-              alt="Рейтинг"
-            />
-          </div>
+        <div class="ser-link-foot">
+          <p>
+            Обращаем Ваше внимание на то, что данный интернет-сайт носит
+            исключительно информационный характер и ни при каких условиях не
+            является публичной офертой, определяемой положениями Статьи 437
+            Гражданского кодекса Российской Федерации.
+          </p>
         </div>
-      </footer>
-
-      <script>
-        function toggleMenu() {
-  document.getElementById("menu").classList.toggle("active");
-  document.getElementById("overlay").classList.toggle("active");
-}
-      </script>
-</body>
+        <div class="footer-rating">
+          <img
+            class="yandex-rating"
+            src="./img/45588c5ae1444dc11fd0cd39704f66dd 1.svg"
+            alt="Рейтинг"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

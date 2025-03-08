@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О компании | ABC AUTO</title>
+    <link rel="stylesheet" href="company.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="start">
+        <div class="theme-switcher">
+          <button id="theme-toggle">
+            <ion-icon name="moon-outline"></ion-icon>
+            <!-- Иконка для темной темы -->
+          </button>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+        <div class="menu" id="menu">
+          <a href="#" onclick="toggleMenu()">Главная</a>
+          <a href="#" onclick="toggleMenu()">О нас</a>
+          <a href="#" onclick="toggleMenu()">Услуги</a>
+          <a href="#" onclick="toggleMenu()">Контакты</a>
+        </div>
+        <img
+          src="./img/photo_2025-03-05_07-43-57 (1).jpg"
+          alt="logo"
+          width="80px"
+          height="95px"
+        />
+        <div class="header-logo-text">
+          <h3 class="logo-name">ABC AUTO</h3>
+          <p class="logo-description">Официальный диллер</p>
+        </div>
+        <img src="./img/Line 56.svg" alt="line" />
+        <div class="background">
+          <p>
+            <span class="bold red">10 лет</span> превосходим <br />
+            ваши ожидания
+          </p>
+        </div>
+        <div class="burger-menu">
+          <ion-icon name="menu-outline" class="burger-icon"></ion-icon>
+        </div>
+        <div class="links">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Подбор авто</a></li>
+              <li><a href="./company.html">О комании</a></li>
+              <li><a href="./about.html">Техцентр</a></li>
+              <li><a href="./abc.html">Отзывы</a></li>
+              <li><a href="./error.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contacts">
+          <img src="./img/Group 3324.svg" alt="phone" />
+          <div class="mobiles">
+            <h2 class="bold first-mobile">+7 (800) 551-94-31</h2>
+            <p class="small-phone">+7 (495) 292-18-67</p>
+          </div>
+          <button class="call bold">Обратный звонок</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-contaiiner">
+      <!-- Навигационное меню -->
+      <section class="hero">
+        <div class="options">
+          <select id="carModel">
+            <option value="">
+              Каталог авто <ion-icon name="chevron-down-outline"></ion-icon>
+            </option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <select id="carModel">
+            <option value="">
+              Авто с пробегом <ion-icon name="chevron-down-outline"></ion-icon>
+            </option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <select id="carModel">
+            <option value="">
+              Кредит и рассрочка
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <select id="carModel">
+            <option value="">
+              Спецпредложения <ion-icon name="chevron-down-outline"></ion-icon>
+            </option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <select id="carModel">
+            <option value="">Такси в кредит</option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="skoda">Skoda</option>
+          </select>
+          <div class="icons">
+            <a href="#"
+              ><ion-icon class="icon-stat" name="heart-outline"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon class="icon-stat" name="stats-chart-outline"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon class="icon-stat" name="search-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+
+        <!-- Иконки -->
+        <div class="icons">
+          <div class="icon-container">
+            <span class="heart-icon"
+              ><img src="./img/heart.svg" alt="heart"
+            /></span>
+            <span class="badge">10</span>
+          </div>
+          <div class="icon-container">
+            <span class="cart-icon"><img src="./img/Vector.svg" alt="" /></span>
+            <span class="badge">12</span>
+          </div>
+          <div class="icon-container">
+            <span class="search-icon"
+              ><img src="./img/poisk.svg" alt=""
+            /></span>
+          </div>
+        </div>
+      </section>
+
+      <main>
+        <section class="about">
+          <h1>О компании</h1>
+          <p>
+            Официальный дилер Азимут Варшавка предлагает широкий выбор
+            автомобилей различных цветов и комплектаций на самых выгодных
+            условиях. На территории автосалона <br />
+            представлено свыше двухсот новых автомобилей и с пробегом. Среди
+            ассортимента представленных автомобилей встречаются наиболее
+            популярные представители европейского,<br />
+            азиатского и российского производства. Для каждого клиента в нашем
+            автосалоне предоставляется полная персональная консультация по
+            любому из представленных автомобилей. <br />
+            Подробнее о представленных в салоне моделях Вы можете узнать на
+            сайте и у наших менеджеров.
+          </p>
+          <p>Выбирая автосалон Азимут Варшавка Вы получаете:</p>
+
+          <ul>
+            <li>самые выгодные цены на автомобили в Москве;</li>
+            <li>
+              возможность выбора автомобилей более чем из двухсот моделей
+              различных цветов и комплектаций;
+            </li>
+            <li>
+              приобретение автомобилей с пробегом, прошедших предпродажную
+              подготовку и юридическую экспертизу;
+            </li>
+            <li>быстрое и качественное оформление документов;</li>
+            <li>высокий уровень сервиса и индивидуальный подход;</li>
+            <li>
+              выгодное приобретение автомобиля по программам Trade-in и
+              утилизация;
+            </li>
+            <li>
+              сотрудничество с самыми крупными банками Москвы, предлагающими
+              наиболее выгодные условия кредитования;
+            </li>
+            <li>
+              возможность участия в программах льготного кредитования «Семейный
+              автомобиль», и «Первый автомобиль», а также льготное условия для
+              медицинских работников и тех, кто <br />
+              сдает свой автомобиль по программе Trade-in в счёт оплаты
+              первоначального взноса;
+            </li>
+            <li>акции и подарки от автосалона при покупке автомобиля.</li>
+          </ul>
+
+          <p>
+            Все вопросы о наличии, цветах и комплектациях автомобилей, а также
+            по работе автосалона Вы всегда можете узнать по телефону, указанному
+            на сайте, а также при помощи формы <br />
+            обратной связи.
+          </p>
+          <p>Мы ценим каждого клиента и гарантируем высокий уровень сервиса!</p>
+          <p>Азимут Варшавка — с нами Вам покорятся все направления!</p>
+        </section>
+
+        <section class="gallery">
+          <h2>Фото автосалона</h2>
+          <div class="slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="./img/fotoavtosalona.svg" alt="Фото автосалона" />
+              <img src="./img/fotoavtosalona.svg" alt="Фото автосалона" />
+              <img src="./img/fotoavtosalona.svg" alt="Фото автосалона" />
+            </div>
+            <button class="next">❯</button>
+          </div>
+        </section>
+
+        <section class="cities">
+          <h2>12 Городов присутствия</h2>
+          <p>1000 работников • 20 лет на рынке</p>
+          <img src="map.png" alt="Карта городов" />
+        </section>
+
+        <section class="partners">
+          <h2>Банки-партнёры</h2>
+          <div class="bank-logos">
+            <img src="sber.png" alt="Сбербанк" />
+            <img src="vtb.png" alt="ВТБ" />
+            <img src="alfabank.png" alt="Альфа-Банк" />
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-links">
+          <a href="#">Каталог авто</a>
+          <a href="#">Кредит и рассрочка</a>
+          <a href="#">Спецпредложения</a>
+          <a href="#">Контакты</a>
+        </div>
+        <p>© 2025 ABC AUTO. Официальный дилер.</p>
+      </footer>
+    </div>
+  </body>
+</html>
