@@ -903,6 +903,74 @@ body.dark-theme .btn:hover {
 }
 
 /*4-slider */
+.custom-swiper1 {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.custom-swiper-header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -20px;
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.custom-swiper-all1 {
+  background: #ca0100;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.custom-swiper-container1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-swiper-container1 .swiper-slide {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 327px;
+  height: 133px;
+}
+
+.custom-swiper-container1 .swiper-slide img {
+  width: 100%;
+  display: block;
+}
+
+.bank-name {
+  margin-top: -70px;
+  width: 203px;
+  height: 27px;
+}
+
+/* 5-slider */
+.rating-otzyv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  margin-bottom: 30px;
+}
+
+.score-otzyv {
+  background-color: #55bc6b;
+  width: 40px;
+  height: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+}
 
 .box-offer {
   display: flex;
