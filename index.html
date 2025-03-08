@@ -41,6 +41,11 @@
       </div>
       <div class="header">
         <div class="start">
+            <div class="theme-switcher">
+                <button id="theme-toggle">
+                    <ion-icon name="moon-outline"></ion-icon> <!-- Иконка для темной темы -->
+                </button>
+            </div>
           <div class="burger" onclick="toggleMenu()">
             <div></div>
             <div></div>
@@ -194,34 +199,52 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
-      <section id="podbor-car" class="cars-models">
-        <img class="kia" src="./img/Frame 16 (1).svg" alt="" />
-        <img
-          class="first-column"
-          src="./img/Group 3790.svg"
-          alt="first-column"
-        />
-        <img
-          class="second-column"
-          src="./img/Group 3789.svg"
-          alt="second-column"
-        />
-        <img
-          class="third-column"
-          src="./img/Group 4261.svg"
-          alt="third-column"
-        />
-        <img
-          class="fourth-column"
-          src="./img/Group 3787.svg"
-          alt="fourth-column"
-        />
-        <img
-          class="fiveth-column"
-          src="./img/Group 3786.svg"
-          alt="fiveth-column"
-        />
+      <section class="car-selection">
+        <div class="brands">    
+            <img
+              class="first-column"
+              src="./img/Group 3790.svg"
+              alt="first-column"
+            />
+            <img
+              class="second-column"
+              src="./img/Group 3789.svg"
+              alt="second-column"
+            />
+            <img
+              class="third-column"
+              src="./img/Group 4261.svg"
+              alt="third-column"
+            />
+            <img
+              class="fourth-column"
+              src="./img/Group 3787.svg"
+              alt="fourth-column"
+            />
+            <img
+              class="fiveth-column"
+              src="./img/Group 3786.svg"
+              alt="fiveth-column"
+            />
+    
+        </div>
+      
+        <div class="filter">
+          <h3>Быстрый подбор авто</h3>
+          <label>Цена: <span id="price-value">0</span> ₽</label>
+          <input type="range" id="price-range" min="0" max="3000000" step="50000" value="0">
+          <div class="filter-controls">
+            <select>
+              <option>Тип кузова</option>
+            </select>
+            <select>
+              <option>Коробка</option>
+            </select>
+          </div>
+          <button>ПОКАЗАТЬ 73</button>
+        </div>
       </section>
+      
       <h1 class="PTS-text">Автомобили в наличии с ПТС</h1>
       <section class="PTS">
         <div class="card">
@@ -682,7 +705,59 @@
         </div>
         <button class="PTS-btn">ПОКАЗАТЬ ЕЩЕ</button>
       </section>
-
+      <div class="custom-swiper">
+        <div class="custom-swiper-header">
+          <h2>Наши подборки</h2>
+          <button class="custom-swiper-all">Все подборки</button>
+        </div>
+        
+        <div class="swiper custom-swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/Rectangle 438 (1).svg" alt="Семейные автомобили">
+              <div class="custom-swiper-overlay">
+                <p>Семейные <br> автомобили</p>
+                <button>Посмотреть</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Rectangle 440.svg" alt="Автомобили для путешествий">
+              <div class="custom-swiper-overlay">
+                <p>Автомобили для <br> путешествий</p>
+                <button>Посмотреть</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Rectangle 439.jpg"alt="Городские автомобили">
+              <div class="custom-swiper-overlay">
+                <p>Городские <br> автомобили</p>
+                <button>Посмотреть</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Rectangle 438 (1).svg" alt="Семейные автомобили">
+              <div class="custom-swiper-overlay">
+                <p>Семейные <br> автомобили</p>
+                <button>Посмотреть</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Rectangle 440.svg" alt="Автомобили для путешествий">
+              <div class="custom-swiper-overlay">
+                <p>Автомобили для <br> путешествий</p>
+                <button>Посмотреть</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Rectangle 439.jpg"alt="Городские автомобили">
+              <div class="custom-swiper-overlay">
+                <p>Городские <br> автомобили</p>
+                <button>Посмотреть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section>
         <div class="box-offer">
           <img class="box" src="./img/pngwing 3.svg" alt="box" />
@@ -706,7 +781,75 @@
           </div>
         </div>
       </section>
-
+      <section class="special-offers">
+        <h2 class="special-offers__title">Спецпредложения</h2>
+      
+        <div class="special-swiper">
+          <div class="special-swiper__wrapper swiper-wrapper">
+            <div class="special-swiper__slide swiper-slide">
+              <img src="./img/Group 3532 (1).svg" alt="Первый автомобиль">
+              <div class="special-swiper__content">
+                <h3>Первый автомобиль</h3>
+                <p>1,9% по льготной ставке</p>
+                <button class="special-swiper__button">Узнать больше</button>
+              </div>
+            </div>
+      
+            <div class="special-swiper__slide swiper-slide">
+              <img src="./img/Mask Group.svg" alt="Семейный автомобиль">
+              <div class="special-swiper__content">
+                <h3>Семейный автомобиль</h3>
+                <p>1,9% по льготной ставке</p>
+                <button class="special-swiper__button">Узнать больше</button>
+              </div>
+            </div>
+      
+            <div class="special-swiper__slide swiper-slide">
+              <img src="./img/Mask Group (1).svg" alt="Экспресс-кредит">
+              <div class="special-swiper__content">
+                <h3>Экспресс-кредит</h3>
+                <p>1,9% по льготной ставке</p>
+                <button class="special-swiper__button">Узнать больше</button>
+              </div>
+            </div>
+            <div class="special-swiper__slide swiper-slide">
+              <img src="./img/Group 3532 (1).svg" alt="Первый автомобиль">
+              <div class="special-swiper__content">
+                <h3>Первый автомобиль</h3>
+                <p>1,9% по льготной ставке</p>
+                <button class="special-swiper__button">Узнать больше</button>
+              </div>
+            </div>
+      
+            <div class="special-swiper__slide swiper-slide">
+              <img src="./img/Mask Group.svg" alt="Семейный автомобиль">
+              <div class="special-swiper__content">
+                <h3>Семейный автомобиль</h3>
+                <p>1,9% по льготной ставке</p>
+                <button class="special-swiper__button">Узнать больше</button>
+              </div>
+            </div>
+      
+            <div class="special-swiper__slide swiper-slide">
+              <img src="./img/Mask Group (1).svg" alt="Экспресс-кредит">
+              <div class="special-swiper__content">
+                <h3>Экспресс-кредит</h3>
+                <p>1,9% по льготной ставке</p>
+                <button class="special-swiper__button">Узнать больше</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Кнопки навигации -->
+          <div class="special-swiper__prev">
+            <img src="./img/arrow-left.svg" alt="Назад">
+          </div>
+          <div class="special-swiper__next">
+            <img src="./img/arrow-right.svg" alt="Вперёд">
+          </div>
+        </div>
+      </section>
+      
       <div class="form-container">
         <h2 class="credit-name">Заявка на автокредит</h2>
 
@@ -728,313 +871,419 @@
               </select>
             </div>
           </div>
-          </form>
-          <div class="credit">
-            <img class="car-credit" src="./img/car-credit.svg" alt="" />
-            <div class="credit-slider">
-              <div class="slider-container1">
-                <div class="credit-text">
-                  <label for="amount">Сумма кредита, руб:</label>
-                  <span id="amountValue">500,000</span>
-                </div>
-                <input
-                  type="range"
-                  id="amount"
-                  min="500000"
-                  max="3000000"
-                  step="100000"
-                  value="500000"
-                />
+        </form>
+        <div class="credit">
+          <img class="car-credit" src="./img/car-credit.svg" alt="" />
+          <div class="credit-slider">
+            <div class="slider-container1">
+              <div class="credit-text">
+                <label for="amount">Сумма кредита, руб:</label>
+                <span id="amountValue">500,000</span>
               </div>
+              <input
+                type="range"
+                id="amount"
+                min="500000"
+                max="3000000"
+                step="100000"
+                value="500000"
+              />
+            </div>
 
-              <div class="slider-container1">
-                <div class="credit-text">
-                  <label for="term">Срок кредита, мес:</label>
-                  <span id="termValue">6</span>
-                </div>
-                <input
-                  type="range"
-                  id="term"
-                  min="6"
-                  max="84"
-                  step="6"
-                  value="6"
-                />
+            <div class="slider-container1">
+              <div class="credit-text">
+                <label for="term">Срок кредита, мес:</label>
+                <span id="termValue">6</span>
               </div>
+              <input
+                type="range"
+                id="term"
+                min="6"
+                max="84"
+                step="6"
+                value="6"
+              />
+            </div>
 
-              <div class="slider-container1">
-                <div class="credit-text">
-                  <label for="initialPayment">Первоначальный взнос, руб:</label>
-                  <span id="initialPaymentValue">0</span>
-                </div>
-                <input
-                  type="range"
-                  id="initialPayment"
-                  min="0"
-                  max="1000000"
-                  step="10000"
-                  value="0"
-                />
+            <div class="slider-container1">
+              <div class="credit-text">
+                <label for="initialPayment">Первоначальный взнос, руб:</label>
+                <span id="initialPaymentValue">0</span>
               </div>
-              <div class="result-container">
-                <div class="result-box">
-                  <div class="result-label">Первоначальный взнос</div>
-                  <div class="result-value" id="calculatedInitialPayment">
-                    0 руб
-                  </div>
+              <input
+                type="range"
+                id="initialPayment"
+                min="0"
+                max="1000000"
+                step="10000"
+                value="0"
+              />
+            </div>
+            <div class="result-container">
+              <div class="result-box">
+                <div class="result-label">Первоначальный взнос</div>
+                <div class="result-value" id="calculatedInitialPayment">
+                  0 руб
                 </div>
-                <div class="result-box">
-                  <div class="result-label">Остаток по кредиту</div>
-                  <div class="result-value" id="calculatedRemainingAmount">
-                    500,000 руб
-                  </div>
+              </div>
+              <div class="result-box">
+                <div class="result-label">Остаток по кредиту</div>
+                <div class="result-value" id="calculatedRemainingAmount">
+                  500,000 руб
                 </div>
               </div>
             </div>
-            <div class="offer-container">
-              <div class="offer-header">
-                <h1 class="offer-title">Получить выгоду</h1>
-                <div class="offer-discount">300 000 ₽</div>
-              </div>
-              <form class="offer-form">
-                <input
-                  type="text"
-                  class="offer-input"
-                  placeholder="Ваше имя"
-                  required
-                />
-                <input
-                  type="tel"
-                  class="offer-input"
-                  placeholder="Ваш телефон"
-                  required
-                />
-                <button type="submit" class="offer-button">
-                  ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ
-                </button>
-              </form>
-              <div class="offer-footer">
-                Нажимая кнопку "Получить скидку", Вы даете согласие на <br />
-                обработку своих <a href="#">персональных данных</a>
-              </div>
+          </div>
+          <div class="offer-container">
+            <div class="offer-header">
+              <h1 class="offer-title">Получить выгоду</h1>
+              <div class="offer-discount">300 000 ₽</div>
             </div>
+            <form class="offer-form">
+              <input
+                type="text"
+                class="offer-input"
+                placeholder="Ваше имя"
+                required
+              />
+              <input
+                type="tel"
+                class="offer-input"
+                placeholder="Ваш телефон"
+                required
+              />
+              <button type="submit" class="offer-button">
+                ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ
+              </button>
+            </form>
+            <div class="offer-footer">
+              Нажимая кнопку "Получить скидку", Вы даете согласие на <br />
+              обработку своих <a href="#">персональных данных</a>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="review-main-container">
+      </div>
+      <div class="review-main-container">
         <div class="review-container">
-            <div class="review-header">
-                <img src="./img/yandex-maps-logo 1.svg" alt="Яндекс Карты">
-                <p>Название автосалона</p>
+          <div class="review-header">
+            <img src="./img/yandex-maps-logo 1.svg" alt="Яндекс Карты" />
+            <p>Название автосалона</p>
+          </div>
+          <div class="review-rating-main">
+            <div class="review-rating">
+              <div class="review-recommendation">Рекомендуют 90%</div>
+              <div class="stars">★★★★☆</div>
             </div>
-            <div class="review-rating-main">
-                <div class="review-rating">
-                    <div class="review-recommendation">Рекомендуют 90%</div>
-                    <div class="stars">★★★★☆</div>
-                </div>
-                <div class="score">4.5</div>
-            </div>
+            <div class="score">4.5</div>
+          </div>
         </div>
-    
-        <div class="review-container">
-            <div class="review-header">
-                <img src="./img/Google_Maps_Logo 2.svg" alt="Google Maps">
-                <p>Название автосалона</p>
-            </div>
-            <div class="review-rating-main">
-                <div class="review-rating">
-                    <div class="review-recommendation">Рекомендуют 90%</div>
-                    <div class="stars">★★★★☆</div>
-                </div>
-                <div class="score">4.1</div>
-            </div>
-        </div>
-    </div>
-    <h1 class="feedback-card-h1">Отзывы</h1>
 
-    <div class="feedback-cards">
+        <div class="review-container">
+          <div class="review-header">
+            <img src="./img/Google_Maps_Logo 2.svg" alt="Google Maps" />
+            <p>Название автосалона</p>
+          </div>
+          <div class="review-rating-main">
+            <div class="review-rating">
+              <div class="review-recommendation">Рекомендуют 90%</div>
+              <div class="stars">★★★★☆</div>
+            </div>
+            <div class="score">4.1</div>
+          </div>
+        </div>
+      </div>
+      <h1 class="feedback-card-h1">Отзывы</h1>
+
+      <div class="feedback-cards">
         <div class="feedback-card">
-            <iframe class="feedback-video" width="560" height="315" src="https://www.youtube.com/embed/HA5cALyVpQs?si=HXWgpEm50lmMY6qy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h2>Сергей Васильев</h2>
-            <p class="short-text">«Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые люди, приветствуют, <br> это не обман, вам гарантия 100 % точно, чисто от <br> меня, приезжайте! Мы приехали приобрести <br> автомобиль в салон ALTERA...</p>
-            <p class="full-text">Дополнительный текст отзыва, который будет показан при нажатии на "Подробнее". Здесь может быть больше информации о впечатлениях клиента.</p>
-            <span class="toggle-button" onclick="toggleText(this)">Подробнее</span>
+          <iframe
+            class="feedback-video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HA5cALyVpQs?si=HXWgpEm50lmMY6qy&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h2>Сергей Васильев</h2>
+          <p class="short-text">
+            «Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые
+            люди, приветствуют, <br />
+            это не обман, вам гарантия 100 % точно, чисто от <br />
+            меня, приезжайте! Мы приехали приобрести <br />
+            автомобиль в салон ALTERA...
+          </p>
+          <p class="full-text">
+            Дополнительный текст отзыва, который будет показан при нажатии на
+            "Подробнее". Здесь может быть больше информации о впечатлениях
+            клиента.
+          </p>
+          <span class="toggle-button" onclick="toggleText(this)"
+            >Подробнее</span
+          >
         </div>
         <div class="feedback-card">
-            <iframe class="feedback-video" width="560" height="315" src="https://www.youtube.com/embed/HA5cALyVpQs?si=HXWgpEm50lmMY6qy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h2>Сергей Васильев</h2>
-            <p class="short-text">«Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые люди, приветствуют, <br> это не обман, вам гарантия 100 % точно, чисто от <br> меня, приезжайте! Мы приехали приобрести <br> автомобиль в салон ALTERA...</p>
-            <p class="full-text">Дополнительный текст отзыва, который будет показан при нажатии на "Подробнее". Здесь может быть больше информации о впечатлениях клиента.</p>
-            <span class="toggle-button" onclick="toggleText(this)">Подробнее</span>
+          <iframe
+            class="feedback-video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HA5cALyVpQs?si=HXWgpEm50lmMY6qy&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h2>Сергей Васильев</h2>
+          <p class="short-text">
+            «Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые
+            люди, приветствуют, <br />
+            это не обман, вам гарантия 100 % точно, чисто от <br />
+            меня, приезжайте! Мы приехали приобрести <br />
+            автомобиль в салон ALTERA...
+          </p>
+          <p class="full-text">
+            Дополнительный текст отзыва, который будет показан при нажатии на
+            "Подробнее". Здесь может быть больше информации о впечатлениях
+            клиента.
+          </p>
+          <span class="toggle-button" onclick="toggleText(this)"
+            >Подробнее</span
+          >
         </div>
         <div class="feedback-card">
-            <iframe class="feedback-video" width="560" height="315" src="https://www.youtube.com/embed/HA5cALyVpQs?si=HXWgpEm50lmMY6qy&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h2>Сергей Васильев</h2>
-            <p class="short-text">«Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые люди, приветствуют, <br> это не обман, вам гарантия 100 % точно, чисто от <br> меня, приезжайте! Мы приехали приобрести <br> автомобиль в салон ALTERA...</p>
-            <p class="full-text">Дополнительный текст отзыва, который будет показан при нажатии на "Подробнее". Здесь может быть больше информации о впечатлениях клиента.</p>
-            <span class="toggle-button" onclick="toggleText(this)">Подробнее</span>
+          <iframe
+            class="feedback-video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HA5cALyVpQs?si=HXWgpEm50lmMY6qy&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h2>Сергей Васильев</h2>
+          <p class="short-text">
+            «Я нахожусь в салоне ALTERA, всем советую, хороший коллектив, добрые
+            люди, приветствуют, <br />
+            это не обман, вам гарантия 100 % точно, чисто от <br />
+            меня, приезжайте! Мы приехали приобрести <br />
+            автомобиль в салон ALTERA...
+          </p>
+          <p class="full-text">
+            Дополнительный текст отзыва, который будет показан при нажатии на
+            "Подробнее". Здесь может быть больше информации о впечатлениях
+            клиента.
+          </p>
+          <span class="toggle-button" onclick="toggleText(this)"
+            >Подробнее</span
+          >
         </div>
-    </div>
-    <div class="about-section">
+      </div>
+      <div class="about-section">
         <h1>О компании</h1>
         <p>
-            Мы располагаем огромной торговой площадкой более 5000 квадратных метров, у нас в наличии не менее 200 <br> автомобилей  как отечественного, так и иностранного производства. В штате автосалона «Альтера» работают настоящие <br> профессионалы, которые знают особенности каждого конкретного автомобиля.
+          Мы располагаем огромной торговой площадкой более 5000 квадратных
+          метров, у нас в наличии не менее 200 <br />
+          автомобилей как отечественного, так и иностранного производства. В
+          штате автосалона «Альтера» работают настоящие <br />
+          профессионалы, которые знают особенности каждого конкретного
+          автомобиля.
         </p>
-        <iframe class="about-section-video" src="https://www.youtube.com/embed/wY124mKa9fw?si=kMpDA4hOx14is3MN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    
-    
-    <div class="company-map">
+        <iframe
+          class="about-section-video"
+          src="https://www.youtube.com/embed/wY124mKa9fw?si=kMpDA4hOx14is3MN"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="company-map">
         <div class="custom-nav">
-            <button onclick="showCustomContainer('custom-info', this)">Автосалон</button>
-            <button onclick="showCustomContainer('custom-contact', this)">Трейд-ин</button>
-            <button onclick="showCustomContainer('custom-location', this)">Покупка</button>
+          <button onclick="showCustomContainer('custom-info', this)">
+            Автосалон
+          </button>
+          <button onclick="showCustomContainer('custom-contact', this)">
+            Трейд-ин
+          </button>
+          <button onclick="showCustomContainer('custom-location', this)">
+            Покупка
+          </button>
         </div>
-    
+
         <div class="custom-header">
-            <h1>Об Автосалоне ABC</h1>
+          <h1>Об Автосалоне ABC</h1>
         </div>
-        
+
         <div id="custom-info" class="custom-container active">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar auctor tellus, id volutpat dui dictum vitae. Sed ac mauris nisi. Maecenas quis sollicitudin dolor, eget molestie dolor. Vivamus sed magna euismod, laquilis eros vitae, vehicula justo. Ut id consequat risus, vitae accusantiam ligula. Proim egestas odio sit amet laoreet vulputate. Suspendisse vitae vestibulum quam. Vivamus lectus justo, bibendum at laoreet vel, rhoncus nec sem. Phasellus at mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla isculia a orci sit amet laculis. Nulla in magna postere nunc pharetra faucibus. Phasellus id enim libero.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            pulvinar auctor tellus, id volutpat dui dictum vitae. Sed ac mauris
+            nisi. Maecenas quis sollicitudin dolor, eget molestie dolor. Vivamus
+            sed magna euismod, laquilis eros vitae, vehicula justo. Ut id
+            consequat risus, vitae accusantiam ligula. Proim egestas odio sit
+            amet laoreet vulputate. Suspendisse vitae vestibulum quam. Vivamus
+            lectus justo, bibendum at laoreet vel, rhoncus nec sem. Phasellus at
+            mollis magna, in bibendum massa. Praesent malesuada sit amet nibh ut
+            vestibulum. Interdum et malesuada fames ac ante ipsum primis in
+            faucibus. Nulla isculia a orci sit amet laculis. Nulla in magna
+            postere nunc pharetra faucibus. Phasellus id enim libero.
+          </p>
         </div>
-        
+
         <div id="custom-contact" class="custom-container">
-            <h2>Контакты</h2>
-            <p><strong>Телефон:</strong> 7 (800) 551-94-31</p>
-            <p><strong>Телефон:</strong> 7 (495) 292-18-67</p>
-            <p><strong>Часы работы:</strong> с 08:00 до 21:00</p>
-            <p><strong>Адрес:</strong> Россия, Москва, 3804 MRAIL 65c1</p>
+          <h2>Контакты</h2>
+          <p><strong>Телефон:</strong> 7 (800) 551-94-31</p>
+          <p><strong>Телефон:</strong> 7 (495) 292-18-67</p>
+          <p><strong>Часы работы:</strong> с 08:00 до 21:00</p>
+          <p><strong>Адрес:</strong> Россия, Москва, 3804 MRAIL 65c1</p>
         </div>
-        
+
         <div id="custom-location" class="custom-container">
-            <h2>Как добраться</h2>
-            <p>Информация о том, как добраться до автосалона.</p>
+          <h2>Как добраться</h2>
+          <p>Информация о том, как добраться до автосалона.</p>
         </div>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.64382017359!2d37.22775297671646!3d55.31184277292413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413551fdddfe5f9d%3A0x70d3681f0a39a514!2z0JDQstGC0L7RgdC10YDQstC40YE!5e0!3m2!1sru!2skg!4v1741355499298!5m2!1sru!2skg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.64382017359!2d37.22775297671646!3d55.31184277292413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413551fdddfe5f9d%3A0x70d3681f0a39a514!2z0JDQstGC0L7RgdC10YDQstC40YE!5e0!3m2!1sru!2skg!4v1741355499298!5m2!1sru!2skg"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div class="contact-card">
-            <div class="contact-info">
-                <div class="icon-content">
-                    <ion-icon class="call-icon" name="call-outline"></ion-icon>
-                    <p>+7 (800) 551-94-31 <br> +7 (495) 292-18-67</p>
-                <p></p>
-                </div>
-                <div class="icon-content">
-                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
-                    <p> Ежедневно с 08:00 до 21:00</p>
-                </div>
-                <div class="icon-content">
-                    <ion-icon class="location-icon" name="location-outline"></ion-icon>
-                <p></ion-icon> Россия, Москва, 38KM MKAД, 65c1</p>
-                </div>
+          <div class="contact-info">
+            <div class="icon-content">
+              <ion-icon class="call-icon" name="call-outline"></ion-icon>
+              <p>
+                +7 (800) 551-94-31 <br />
+                +7 (495) 292-18-67
+              </p>
+              <p></p>
             </div>
-                <button class="how-go">Как до нас добраться</button>
+            <div class="icon-content">
+              <ion-icon class="time-icon" name="time-outline"></ion-icon>
+              <p>Ежедневно с 08:00 до 21:00</p>
+            </div>
+            <div class="icon-content">
+              <ion-icon
+                class="location-icon"
+                name="location-outline"
+              ></ion-icon>
+              <p>Россия, Москва, 38KM MKAД, 65c1</p>
+            </div>
+          </div>
+          <button class="how-go">Как до нас добраться</button>
         </div>
-    </div>
-    <footer class="footer">
+      </div>
+      <footer class="footer">
         <div class="container">
-            <div class="options1">
-                <select id="carModel">
-                  <option value="">
-                    Каталог авто <ion-icon name="chevron-down-outline"></ion-icon>
-                  </option>
-                  <option value="kia">Kia</option>
-                  <option value="hyundai">Hyundai</option>
-                  <option value="skoda">Skoda</option>
-                </select>
-                <select id="carModel">
-                  <option value="">
-                    Авто с пробегом <ion-icon name="chevron-down-outline"></ion-icon>
-                  </option>
-                  <option value="kia">Kia</option>
-                  <option value="hyundai">Hyundai</option>
-                  <option value="skoda">Skoda</option>
-                </select>
-                <select id="carModel">
-                  <option value="">
-                    Кредит и рассрочка
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                  </option>
-                  <option value="kia">Kia</option>
-                  <option value="hyundai">Hyundai</option>
-                  <option value="skoda">Skoda</option>
-                </select>
-                <select id="carModel">
-                  <option value="">
-                    Спецпредложения <ion-icon name="chevron-down-outline"></ion-icon>
-                  </option>
-                  <option value="kia">Kia</option>
-                  <option value="hyundai">Hyundai</option>
-                  <option value="skoda">Skoda</option>
-                </select>
-                <select id="carModel">
-                  <option value="">Такси в кредит</option>
-                  <option value="kia">Kia</option>
-                  <option value="hyundai">Hyundai</option>
-                  <option value="skoda">Skoda</option>
-                </select>
-              </div>
+          <div class="options1">
+            <select id="carModel">
+              <option value="">
+                Каталог авто <ion-icon name="chevron-down-outline"></ion-icon>
+              </option>
+              <option value="kia">Kia</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="skoda">Skoda</option>
+            </select>
+            <select id="carModel">
+              <option value="">
+                Авто с пробегом
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </option>
+              <option value="kia">Kia</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="skoda">Skoda</option>
+            </select>
+            <select id="carModel">
+              <option value="">
+                Кредит и рассрочка
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </option>
+              <option value="kia">Kia</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="skoda">Skoda</option>
+            </select>
+            <select id="carModel">
+              <option value="">
+                Спецпредложения
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </option>
+              <option value="kia">Kia</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="skoda">Skoda</option>
+            </select>
+            <select id="carModel">
+              <option value="">Такси в кредит</option>
+              <option value="kia">Kia</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="skoda">Skoda</option>
+            </select>
+          </div>
           <div class="footer-columns">
             <!-- Каталог авто -->
             <div class="footer-column1">
               <h3 class="footer-title active">КАТАЛОГ АВТО</h3>
-             <div class="footer-list-all">
+              <div class="footer-list-all">
                 <ul class="footer-list">
-                    <li><a href="#">Kia</a></li>
-                    <li><a href="#">Hyundai</a></li>
-                    <li><a href="#">Skoda</a></li>
-                    <li><a href="#">Volkswagen</a></li>
-                    <li><a href="#">Toyota</a></li>
-                    <li><a href="#">Brilliance</a></li>
-                  </ul>
+                  <li><a href="#">Kia</a></li>
+                  <li><a href="#">Hyundai</a></li>
+                  <li><a href="#">Skoda</a></li>
+                  <li><a href="#">Volkswagen</a></li>
+                  <li><a href="#">Toyota</a></li>
+                  <li><a href="#">Brilliance</a></li>
+                </ul>
                 <ul class="footer-list">
-                    <li><a href="#">Changan</a></li>
-                    <li><a href="#">Chery</a></li>
-                    <li><a href="#">CheryExeed</a></li>
-                    <li><a href="#">Chevrolet</a></li>
-                    <li><a href="#">Citroen</a></li>
-                    <li><a href="#">Datsun</a></li>
-                  </ul>
+                  <li><a href="#">Changan</a></li>
+                  <li><a href="#">Chery</a></li>
+                  <li><a href="#">CheryExeed</a></li>
+                  <li><a href="#">Chevrolet</a></li>
+                  <li><a href="#">Citroen</a></li>
+                  <li><a href="#">Datsun</a></li>
+                </ul>
                 <ul class="footer-list">
-                    <li><a href="#">Dongfeng</a></li>
-                    <li><a href="#">DW Hower</a></li>
-                    <li><a href="#">FAW </a></li>
-                    <li><a href="#">Ford
-                    </a></li>
-                    <li><a href="#">Foton</a></li>
-                    <li><a href="#">Geely</a></li>
-                  </ul>
+                  <li><a href="#">Dongfeng</a></li>
+                  <li><a href="#">DW Hower</a></li>
+                  <li><a href="#">FAW </a></li>
+                  <li><a href="#">Ford </a></li>
+                  <li><a href="#">Foton</a></li>
+                  <li><a href="#">Geely</a></li>
+                </ul>
                 <ul class="footer-list">
-                    <li><a href="#">Great Wall</a></li>
-                    <li><a href="#">Haima</a></li>
-                    <li><a href="#">Haval</a></li>
-                    <li><a href="#">Honda</a></li>
-                    <li><a href="#">JAC</a></li>
-                    <li><a href="#">Lada</a></li>
-                  </ul>
+                  <li><a href="#">Great Wall</a></li>
+                  <li><a href="#">Haima</a></li>
+                  <li><a href="#">Haval</a></li>
+                  <li><a href="#">Honda</a></li>
+                  <li><a href="#">JAC</a></li>
+                  <li><a href="#">Lada</a></li>
+                </ul>
                 <ul class="footer-list">
-                    <li><a href="#">Lifan</a></li>
-                    <li><a href="#">Mazda</a></li>
-                    <li><a href="#">Mitsubishi</a></li>
-                    <li><a href="#">Nissan</a></li>
-                    <li><a href="#">Opel</a></li>
-                    <li><a href="#">Peugeot
-                    </a></li>
-                  </ul>
+                  <li><a href="#">Lifan</a></li>
+                  <li><a href="#">Mazda</a></li>
+                  <li><a href="#">Mitsubishi</a></li>
+                  <li><a href="#">Nissan</a></li>
+                  <li><a href="#">Opel</a></li>
+                  <li><a href="#">Peugeot </a></li>
+                </ul>
                 <ul class="footer-list">
-                    <li><a href="#">Ravon</a></li>
-                    <li><a href="#">Renault</a></li>
-                    <li><a href="#">SsangYong</a></li>
-                    <li><a href="#">Suzuki</a></li>
-                    <li><a href="#">UAZ
-                    </a></li>
-                    <li><a href="#">Zotye</a></li>
-                  </ul>
-                 
-             </div>
+                  <li><a href="#">Ravon</a></li>
+                  <li><a href="#">Renault</a></li>
+                  <li><a href="#">SsangYong</a></li>
+                  <li><a href="#">Suzuki</a></li>
+                  <li><a href="#">UAZ </a></li>
+                  <li><a href="#">Zotye</a></li>
+                </ul>
+              </div>
             </div>
-      
+
             <!-- Кредит и рассрочка -->
             <div class="footer-column">
               <h3 class="footer-title active">КРЕДИТ И РАССРОЧКА</h3>
@@ -1047,65 +1296,74 @@
                 <li><a href="#">Trade-in</a></li>
               </ul>
             </div>
-      
+
             <!-- Контакты -->
             <div class="footer-column">
               <h3 class="footer-title1">КОНТАКТЫ</h3>
               <div class="icon-content1">
                 <ion-icon class="call-icon1" name="call-outline"></ion-icon>
-                <p class="gray">+7 (800) 551-94-31 <br> +7 (495) 292-18-67</p>
-            <p></p>
-            </div>
-            <div class="icon-content1">
+                <p class="gray">
+                  +7 (800) 551-94-31 <br />
+                  +7 (495) 292-18-67
+                </p>
+                <p></p>
+              </div>
+              <div class="icon-content1">
                 <ion-icon class="time-icon1" name="time-outline"></ion-icon>
-                <p class="gray"> Ежедневно с 08:00 до 21:00</p>
-            </div>
-            <div class="icon-content1">
-                <ion-icon class="location-icon1" name="location-outline"></ion-icon>
-            <p class="gray"></ion-icon> Россия, Москва, 38KM MKAД, 65c1</p>
-            
-            </div>
-            <a class="chme" href="#">Схема проезда</a>
-        </div>
+                <p class="gray">Ежедневно с 08:00 до 21:00</p>
+              </div>
+              <div class="icon-content1">
+                <ion-icon
+                  class="location-icon1"
+                  name="location-outline"
+                ></ion-icon>
+                <p class="gray">Россия, Москва, 38KM MKAД, 65c1</p>
+              </div>
+              <a class="chme" href="#">Схема проезда</a>
             </div>
           </div>
-      
-          <div class="footer-bottom">
-            <div class="left-link-footer">
-                <h1>© 2021 Автосалон "ABC AUTO". Официальный дилер</h1>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="left-link-footer">
+            <h1>© 2021 Автосалон "ABC AUTO". Официальный дилер</h1>
             <div class="link-footer">
-                <p><a href="#">Политика конфиденциальности</a></p>
-            <p><a href="#">Пользовательское соглашение</a></p>
+              <p><a href="#">Политика конфиденциальности</a></p>
+              <p><a href="#">Пользовательское соглашение</a></p>
             </div>
-            </div>
-            <div class="ser-link-foot">
-                <p>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.</p>
-            </div>
-            <div class="footer-rating">
-              <img class="yandex-rating" src="./img/45588c5ae1444dc11fd0cd39704f66dd 1.svg" alt="Рейтинг">
-            </div>
+          </div>
+          <div class="ser-link-foot">
+            <p>
+              Обращаем Ваше внимание на то, что данный интернет-сайт носит
+              исключительно информационный характер и ни при каких условиях не
+              является публичной офертой, определяемой положениями Статьи 437
+              Гражданского кодекса Российской Федерации.
+            </p>
+          </div>
+          <div class="footer-rating">
+            <img
+              class="yandex-rating"
+              src="./img/45588c5ae1444dc11fd0cd39704f66dd 1.svg"
+              alt="Рейтинг"
+            />
           </div>
         </div>
       </footer>
-      
     </div>
-</div>
 
-</div>
-</div>
-
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-            <script
-              type="module"
-              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-            ></script>
-            <script src="./js/slider.js"></script>
-            <script src="./js/switching-container.js"></script>
-            <script src="./js/more.js"></script>
-            <script src="./js/switcher-theme.js"></script>
-            <script src="./js/burger.js"></script>
-            <script src="./js/car-credit.js"></script>
-
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/switching-container.js"></script>
+    <script src="./js/theme-switcher.js"></script>
+    <script src="./js/more.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/car-credit.js"></script>
+    <script src="js/car-selection.js"></script>
+    <script src="js/2-slider.js"></script>
+    <script src="js/3-slider.js"></script>
+  </body>
 </html>

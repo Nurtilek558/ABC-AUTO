@@ -17,3 +17,6 @@ const swiper = new Swiper(".mySwiper", {
         modifier: 1,
     },
 });
+
+
+  
